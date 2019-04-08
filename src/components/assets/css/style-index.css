@@ -1,0 +1,226 @@
+html{
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Marko One';
+}
+
+nav.navbar .navbar-brand, .nav-item a{
+  color: white;
+  font-weight: bold;
+  font-family: 'McLaren';
+  font-size: 13pt;
+  transition: .3s;
+}
+
+nav.navbar .navbar-brand{
+  font-size: 20pt;
+}
+
+nav.navbar ul:hover .nav-item a{
+  color: rgba(255,255,255,.3);
+  transform: scale(.9);
+  
+}
+
+nav.navbar ul .nav-item a:hover{
+  color:white;
+  transform: scale(1);
+}
+
+.wrapper{
+  background:black;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  top:0px;
+  z-index: 10;
+}
+
+#banner .overlay{
+  background: url('../img/_DSC0136-1.jpg');
+  background-size: 100%;
+  background-attachment: fixed;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  top:0;
+  z-index: -1;
+  opacity: .5;
+}
+
+#banner .text-banner{
+  margin-top: 30vh;
+  color: white;
+  font-family: 'Marko One';
+}
+
+
+
+#banner .text-banner h1 b{
+  font-family: 'oleo script';
+}
+
+#banner .text-banner h1{
+  font-size: 40pt;
+  font-weight: normal;
+}
+
+#banner .text-banner h2{
+  font-size: 20pt;
+  font-weight: normal;
+  margin-top:20px;
+}
+
+.btn-banner{
+  background: transparent;
+  color: white;
+  font-weight: bold;
+  transition: .5s;
+  font-family: 'McLaren';
+}
+
+.btn-banner:hover{
+  border-bottom: 3px solid white;
+  border-radius: 0;
+  color:white;
+}
+
+
+#about{
+  color:white;
+  top:0;
+  font-family: 'Marko One';
+}
+
+#about .overlay{
+  background: url('../img/bg.jpeg.svg') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  top:0;
+  z-index: -1;
+  opacity: .3;
+}
+
+#about img{
+  width: 200px;
+  border-radius: 50%;
+  border:5px solid #fff;
+}
+
+#about .ket h2{
+  font-family: 'oleo script';
+  font-size: 35pt;
+  text-align: center;
+}
+
+hr{
+  background: white;
+  width: 50%;
+}
+
+#skill{
+  color:white;
+  font-family: 'Marko One';
+}
+
+#skill .overlay{
+  background: url('../img/bg-skill.jpg') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  top:0;
+  z-index: -1;
+  opacity: .2;
+  color:white;
+}
+
+.bg-design{
+  background-color: rgb(13, 150, 150) !important;
+}
+
+.bg-front{
+  background-color: rgb(221, 132, 31) !important;
+}
+
+.bg-back{
+  background-color: rgb(103, 104, 104) !important;
+}
+
+#portfolio{
+  color: #fff;
+}
+#portfolio h2{
+  font-family: 'oleo script';
+  font-size: 35pt;
+  text-align: center;
+}
+
+#portfolio img{
+  width: 100%;
+}
+
+#social{
+  color: #fff;
+}
+
+#social h2{
+  font-family: 'oleo script';
+  font-size: 35pt;
+  text-align: center;
+}
+
+#social h1{
+  font-family: 'oleo script';
+  font-size: 50pt;
+}
+
+#social h1::before{
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: rgba(255,255,255,.3);
+  position: absolute;
+  top:150px;
+  border-radius: 50%;
+  animation-name: an1;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+}
+
+#social h1::after{
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: rgba(255,255,255,.3);
+  position: absolute;
+  top:5px;
+  border-radius: 50%;
+  animation-name: an2;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes an1 {
+  0%{
+    transform: translateX(0)
+  }
+  50%{
+    transform: translateX(500px)
+  }
+}
+
+@keyframes an2 {
+  0%{
+    transform: translateX(0)
+  }
+  50%{
+    transform: translateX(-500px)
+  }
+}
